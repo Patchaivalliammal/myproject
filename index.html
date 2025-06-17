@@ -1,24 +1,63 @@
-<!-- 
-Online HTML, CSS and JavaScript editor to run code online.
--->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Browser</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patchavalli | AI & Data Science Engineer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .wave {
+      display: inline-block;
+      animation: waveHand 2s infinite;
+      transform-origin: 70% 70%;
+    }
+
+    p {
+      font-size: 1.5em;
+      max-width: 600px;
+      line-height: 1.5;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes waveHand {
+      0% { transform: rotate(0.0deg); }
+      10% { transform: rotate(14.0deg); }
+      20% { transform: rotate(-8.0deg); }
+      30% { transform: rotate(14.0deg); }
+      40% { transform: rotate(-4.0deg); }
+      50% { transform: rotate(10.0deg); }
+      60% { transform: rotate(0.0deg); }
+      100% { transform: rotate(0.0deg); }
+    }
+  </style>
 </head>
-
 <body>
-  <h1>
-    Hello am Patchai!
-  </h1>
-  <p>
-    Am a AI & Data Science  Engineer.
-  </p>
-  <script src="script.js"></script>
+  <h1>Hello <span class="wave">👋</span></h1>
+  <h2>I'm Patchavalli</h2>
+  <p>An AI and Data Science Engineer passionate about building intelligent solutions to real-world problems.</p>
 </body>
-
 </html>
